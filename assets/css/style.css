@@ -1,0 +1,12 @@
+/*  */
+body{
+font-family: "raleway";
+}
+
+header {
+  background-image: url(..//img/bg-hero.jpg); /* El primer comadno pone la imagen atras del texto, la url es la imagen del texto */
+  background-repeat: no-repeat; /* Este comando es para que la imagen no se repita en forma de mosaico*/
+  background-size: cover; /* COmando para que la imagen ocupe el ancho completo del container */
+  background-position: left; /* Para que la imagen se ubique de izquierda a derecha */
+  padding-bottom: 10rem;
+}

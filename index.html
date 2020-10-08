@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olivia Ros | Food Blogger</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS de Bootstrap en su ultima version-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Libreria de google font, para el tipo de letra -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Font awesome para los iconos -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!--Enlace hacia CSS-->
+    <link rel="stylesheet" href="assets/css/style.css"> 
+
+</head>
+<body>
+
+      <!-- Barra de navegacion, fixed-top para que la barra siga el vance de la pantalla-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container" href="#"> <img src="assets/img/logo.png" alt="Logo de Olivia Ros"></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                    <a class="nav-link" href="#about">Acerca de mi <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#work">Trabajos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+
+      <!--text-light: COlor del texto, text-right:alineacion   py-5: margin top y bottom, font-weight-bold: tipo de letra: display-1: tamaño de la letra -->
+    <header class="hero text-light text-right py-5 mt-5">
+        <div class="container">
+            <h1 class="display-1 font-weight-bold my-5">Comidas del fin del mundo</h1>
+            <p class="my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, vitae? Alias exercitationem sapiente amet esse! Sequi tempora, vitae cum est odio repellat quidem esse ratione sint nulla, unde consequatur molestiae.</p>
+            <a href="#work" class="btn btn-outline-info btn-lg">Trabajos</a>
+            <a href="#contact" class="btn btn-info btn-lg">Contacto</a>
+        </div>
+    </header>
+
+    <section id="about" class="container text-center my-5">
+        <h2 class="display-3 font-weigth-bold my-4">Acerca de mi</h2>
+        <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum earum sequi illo, accusantium nemo cupiditate assumenda non esse architecto officia! Repellat eius soluta ipsam accusamus nulla sunt impedit asperiores sint!
+        </p>
+
+        <!-- SIstema de grillas, el wor siempre deve ir antes -->
+        <!-- .col-sm-4aplica a dispositivos pequeños, medianos, grandes y extra grandes, pero no al primer xspunto de interrupción, fa-3x es para agrandar los iconos de font awesome -->
+        <!--  -->
+        <div class="row">
+            <div class="col-md-4">
+                <i class="fas fa-camera fa-3x my-3"></i></i>
+                <h3 class="my-3">Fotografias de comidas</h3>
+                <p class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-bullhorn fa-3x my-3"></i>
+                <h3 class="my-3">Critica culinaria </h3>                     
+                <p class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-map fa-3x my-3"></i>
+                <h3 class="my-3">Bloggera de viajes</h3>
+                <p class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- gb-info: color del fondo de container-fluid -->
+    <section id="work" class="container-fluid my-5 p-5 bg-info">
+        <h2 class="display-3 text-center font-weigth-bold my-4 text-white">Mis trabajos</h2>
+        <div class="card-deck">
+            <div class="card">
+              <img src="assets/img/card-1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Asado en la Patagonia</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                 <!-- data togle y data-target son datos codigos extraido de la modal de boostrap, en el inicio del codigo que viene terminando la section actual-->
+                <a href="" class="btn btn-outline-info" data-toggle="modal" data-target="#asado">Ver mas</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="assets/img/card-2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Papas del fin del mundo</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <a href="" class="btn btn-outline-info" data-toggle="modal" data-target="#papas">Ver mas</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="assets/img/card-3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Salmones de Alaska</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <a href="" class="btn btn-outline-info" data-toggle="modal" data-target="#salmones">Ver mas</a>
+              
+              </div>
+            </div>
+          </div>
+    </section>
+
+     <!-- Codigo para el boton de asado, extraido de la modal en boostrap-->
+     <!-- tarjeta asado-->
+    <div class="modal fade" id="asado" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Asado en la patagonia</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- el img-fluid es para que la imagen sea responsiba-->
+            <img src="assets/img/card-1.jpg" class="img-fluid my-3" alt="asado">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quasi quas fuga, recusandae consequuntur eum eveniet iusto necessitatibus ipsum facilis, sed accusamus perferendis perspiciatis quaerat molestiae ea voluptatibus. Eius, voluptatem.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo sapiente nam aut minus iste voluptate labore voluptatem placeat a odio. Ratione officia ipsa omnis quae ut doloremque fugit harum at!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, perspiciatis itaque? Ex modi aliquid similique accusamus omnis, aliquam, quibusdam quaerat dicta porro dolorem laborum dolor nisi obcaecati nam, quas officia?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- tarjeta Papas-->
+    <div class="modal fade" id="papas" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Papas del fin del mundo</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- el img-fluid es para que la imagen sea responsiba-->
+            <img src="assets/img/card-2.jpg" class="img-fluid my-3" alt="asado">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quasi quas fuga, recusandae consequuntur eum eveniet iusto necessitatibus ipsum facilis, sed accusamus perferendis perspiciatis quaerat molestiae ea voluptatibus. Eius, voluptatem.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo sapiente nam aut minus iste voluptate labore voluptatem placeat a odio. Ratione officia ipsa omnis quae ut doloremque fugit harum at!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, perspiciatis itaque? Ex modi aliquid similique accusamus omnis, aliquam, quibusdam quaerat dicta porro dolorem laborum dolor nisi obcaecati nam, quas officia?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- tarjeta Papas-->
+      <div class="modal fade" id="salmones" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Salmones de Alaska</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <!-- el img-fluid es para que la imagen sea responsiba-->
+              <img src="assets/img/card-3.jpg" class="img-fluid my-3" alt="asado">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quasi quas fuga, recusandae consequuntur eum eveniet iusto necessitatibus ipsum facilis, sed accusamus perferendis perspiciatis quaerat molestiae ea voluptatibus. Eius, voluptatem.</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo sapiente nam aut minus iste voluptate labore voluptatem placeat a odio. Ratione officia ipsa omnis quae ut doloremque fugit harum at!</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, perspiciatis itaque? Ex modi aliquid similique accusamus omnis, aliquam, quibusdam quaerat dicta porro dolorem laborum dolor nisi obcaecati nam, quas officia?</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <section id="contact" class="container my-5">
+      <h2 class="display-3 font-weigth-bold text-center my-4">Contàctame</h2>
+      <p class="text-center my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, rem! Porro deserunt quibusdam a officia aut fugit. Consequatur quae vel ad culpa, nam natus dolor fugit non modi quia. Odit?</p>
+
+      <!-- form de boostrap, para autocompletado -->
+      <form>
+        <div class="form-group">
+          <label for="formGroupExampleInput">Nombre</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Correo electrònico</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Correo electrònico" aria-describedby="emailHelp">
+          <small id="emailHelp" class="form-text text-muted"></small>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Mensaje</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Escriba aquì su mensaje" rows="3"></textarea>
+        </div>
+
+        <div class="text-right">
+          <button type="submit" class="btn btn-info">Submit</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- bg es para el backgraund oscuro, text center al centro y p-3 para paddin hacia todos los lados -->
+    <footer class="bg-dark text-light text-center p-3">
+      <p>Olivia Ros 2019. Todos los derechos reservados</p>
+    </footer>
+
+    <!--JQuery, ultima version sin slim-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+    </script>
+
+
+    <!--Popper JS, se extrae de la pagina de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+    <!--Bootstrap JS, se extrae de la pagina de Bootstrap-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <!--La rutina de java siempre va al ultimo, para que la pagina pueda cargar todo el codigo antes-->
+    <script src="assets/js/script.js" ></script>
+    
+</body>
+</html>
